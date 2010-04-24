@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<LinearLayout android:id="@+id/LinearLayout01"  android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+<LinearLayout android:id="@+id/LinearLayout02"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+<TextView android:id="@+id/TimerView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="40" android:gravity="right|center_vertical" android:textSize="30sp" android:text="0:00 " android:textColor="#00cc00" android:textStyle="bold" android:typeface="sans"></TextView>
+<Button android:text="Start" android:id="@+id/StartButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="30" android:textSize="18sp" android:nextFocusDown="@+id/FlubButton"></Button>
+<Button android:text="Stop" android:id="@+id/StopButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="30" android:textSize="18sp" android:nextFocusDown="@+id/FlubButton"></Button>
+</LinearLayout>
+<Button android:text="FLUB!" android:id="@+id/FlubButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="#990000" android:hapticFeedbackEnabled="true" android:textSize="56sp" android:textStyle="bold" android:nextFocusDown="@+id/EmailButton"/>
+<EditText android:id="@+id/FlubList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="top|left" android:background="@drawable/weblogo" android:textColor="#ffffcc" android:textSize="24sp"/>
+<LinearLayout android:id="@+id/LinearLayout03"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+<Button android:text="Email" android:id="@+id/EmailButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="30" android:textSize="18sp" android:nextFocusUp="@+id/FlubButton"></Button>
+<Button android:text="Whip It!" android:id="@+id/WhipButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="30" android:textSize="18sp" android:nextFocusUp="@+id/FlubButton"></Button>
+<Button android:text="Clear" android:id="@+id/ClearButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="30" android:textSize="18sp" android:nextFocusUp="@+id/FlubButton"></Button>
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
